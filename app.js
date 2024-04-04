@@ -9,7 +9,7 @@ app.use(express.urlencoded());
 function generateOtp(){
      otpVal = Math.floor(1000 + Math.random() * 9000);
     console.log(otpVal);
-    return otpVal
+    return otpVal;
 }
 
 app.get('/', (req, res)=> {
